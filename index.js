@@ -45,9 +45,9 @@ function timer() {
 			sec = 0
 
 		}
-		if (sec <=9) {
-			Seconds.innerText = "0" +sec;
-		}
+		(hr <=9) ? Hour.innerText = "0" +hr: Hour.innerText = hr;
+		(min <=9) ? Minute.innerText = "0" +min: Minute.innerText = min;
+		(sec <=9) ? Seconds.innerText = "0" +sec: Seconds.innerText = sec;
 		setTimeout("timer()", 1000)
 
 	}
