@@ -16,11 +16,10 @@ Reset.addEventListener("click", ()=> {
 
 })
 
-Start.addEventListener("click", () => {
+if(timer_state != true) { Start.addEventListener("click", () => {
 	timer_state = true;
 	timer();
-})
-
+})}
 Pause.addEventListener("click", ()=>{
 	timer_state = false;
 })
